@@ -54,12 +54,12 @@ tree* buildtree(){
     int value;
     cout<<"enter data to be inserted"<<endl;
     cin>>value;
-    tree* root=new tree(value);
+    
     if(value==-1){
         return NULL;
     }
 
-    
+    tree* root=new tree(value);
     cout<<"enter data at left of node"<<value<<endl;
     root->left=buildtree();
     cout<<"enter data at right of node"<<value<<endl;
